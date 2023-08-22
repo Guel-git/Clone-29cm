@@ -11,7 +11,6 @@
 		52B6BCAF2A9492C000022A20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6BCAE2A9492C000022A20 /* SceneDelegate.swift */; };
 		52B6BCB12A9492C000022A20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6BCB02A9492C000022A20 /* ViewController.swift */; };
 		52B6BCB62A9492C200022A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B6BCB52A9492C200022A20 /* Assets.xcassets */; };
-		52B6BCB92A9492C200022A20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B6BCB72A9492C200022A20 /* LaunchScreen.storyboard */; };
 		52B6BCC42A9492C200022A20 /* Clone_29cmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6BCC32A9492C200022A20 /* Clone_29cmTests.swift */; };
 		52B6BCCE2A9492C200022A20 /* Clone_29cmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6BCCD2A9492C200022A20 /* Clone_29cmUITests.swift */; };
 		52B6BCD02A9492C200022A20 /* Clone_29cmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6BCCF2A9492C200022A20 /* Clone_29cmUITestsLaunchTests.swift */; };
@@ -40,7 +39,6 @@
 		52B6BCAE2A9492C000022A20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		52B6BCB02A9492C000022A20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52B6BCB52A9492C200022A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		52B6BCB82A9492C200022A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52B6BCBA2A9492C200022A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52B6BCBF2A9492C200022A20 /* Clone-29cmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clone-29cmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B6BCC32A9492C200022A20 /* Clone_29cmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clone_29cmTests.swift; sourceTree = "<group>"; };
@@ -97,12 +95,9 @@
 		52B6BCAB2A9492C000022A20 /* Clone-29cm */ = {
 			isa = PBXGroup;
 			children = (
-				52B6BCAC2A9492C000022A20 /* AppDelegate.swift */,
-				52B6BCAE2A9492C000022A20 /* SceneDelegate.swift */,
-				52B6BCB02A9492C000022A20 /* ViewController.swift */,
-				52B6BCB52A9492C200022A20 /* Assets.xcassets */,
-				52B6BCB72A9492C200022A20 /* LaunchScreen.storyboard */,
-				52B6BCBA2A9492C200022A20 /* Info.plist */,
+				52B6BCDE2A9493BB00022A20 /* Network */,
+				52B6BCDD2A9493AB00022A20 /* Screen */,
+				52B6BCDC2A9493A500022A20 /* Global */,
 			);
 			path = "Clone-29cm";
 			sourceTree = "<group>";
@@ -122,6 +117,48 @@
 				52B6BCCF2A9492C200022A20 /* Clone_29cmUITestsLaunchTests.swift */,
 			);
 			path = "Clone-29cmUITests";
+			sourceTree = "<group>";
+		};
+		52B6BCDC2A9493A500022A20 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				52B6BCE02A94941E00022A20 /* Resource */,
+				52B6BCDF2A9493C500022A20 /* Support */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		52B6BCDD2A9493AB00022A20 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				52B6BCB02A9492C000022A20 /* ViewController.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		52B6BCDE2A9493BB00022A20 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		52B6BCDF2A9493C500022A20 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				52B6BCBA2A9492C200022A20 /* Info.plist */,
+				52B6BCAC2A9492C000022A20 /* AppDelegate.swift */,
+				52B6BCAE2A9492C000022A20 /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		52B6BCE02A94941E00022A20 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				52B6BCB52A9492C200022A20 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +265,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52B6BCB92A9492C200022A20 /* LaunchScreen.storyboard in Resources */,
 				52B6BCB62A9492C200022A20 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,17 +327,6 @@
 			targetProxy = 52B6BCCA2A9492C200022A20 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		52B6BCB72A9492C200022A20 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52B6BCB82A9492C200022A20 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		52B6BCD12A9492C200022A20 /* Debug */ = {
@@ -427,7 +452,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7PQ6FMV22H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Clone-29cm/Info.plist";
+				INFOPLIST_FILE = "Clone-29cm/Global/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -454,7 +479,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7PQ6FMV22H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Clone-29cm/Info.plist";
+				INFOPLIST_FILE = "Clone-29cm/Global/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
