@@ -16,6 +16,7 @@
 		52B6BCD02A9492C200022A20 /* Clone_29cmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6BCCF2A9492C200022A20 /* Clone_29cmUITestsLaunchTests.swift */; };
 		52B6BCE62A94988600022A20 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 52B6BCE52A94988600022A20 /* SnapKit */; };
 		52B6BCE92A949C6A00022A20 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6BCE82A949C6A00022A20 /* UIColor+Extension.swift */; };
+		52B6BCEC2A949DE300022A20 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6BCEB2A949DE300022A20 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		52B6BCCD2A9492C200022A20 /* Clone_29cmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clone_29cmUITests.swift; sourceTree = "<group>"; };
 		52B6BCCF2A9492C200022A20 /* Clone_29cmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clone_29cmUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		52B6BCE82A949C6A00022A20 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		52B6BCEB2A949DE300022A20 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		52B6BCDC2A9493A500022A20 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				52B6BCEA2A949DCF00022A20 /* Base */,
 				52B6BCE72A949C5B00022A20 /* Extension */,
 				52B6BCE02A94941E00022A20 /* Resource */,
 				52B6BCDF2A9493C500022A20 /* Support */,
@@ -172,6 +175,14 @@
 				52B6BCE82A949C6A00022A20 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		52B6BCEA2A949DCF00022A20 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				52B6BCEB2A949DE300022A20 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B6BCEC2A949DE300022A20 /* BaseViewController.swift in Sources */,
 				52B6BCB12A9492C000022A20 /* ViewController.swift in Sources */,
 				52B6BCAD2A9492C000022A20 /* AppDelegate.swift in Sources */,
 				52B6BCAF2A9492C000022A20 /* SceneDelegate.swift in Sources */,
