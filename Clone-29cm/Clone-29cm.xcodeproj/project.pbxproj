@@ -14,6 +14,7 @@
 		52B6BCC42A9492C200022A20 /* Clone_29cmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6BCC32A9492C200022A20 /* Clone_29cmTests.swift */; };
 		52B6BCCE2A9492C200022A20 /* Clone_29cmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6BCCD2A9492C200022A20 /* Clone_29cmUITests.swift */; };
 		52B6BCD02A9492C200022A20 /* Clone_29cmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6BCCF2A9492C200022A20 /* Clone_29cmUITestsLaunchTests.swift */; };
+		52B6BCE62A94988600022A20 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 52B6BCE52A94988600022A20 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B6BCE62A94988600022A20 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +179,9 @@
 			dependencies = (
 			);
 			name = "Clone-29cm";
+			packageProductDependencies = (
+				52B6BCE52A94988600022A20 /* SnapKit */,
+			);
 			productName = "Clone-29cm";
 			productReference = 52B6BCA92A9492C000022A20 /* Clone-29cm.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +254,9 @@
 				Base,
 			);
 			mainGroup = 52B6BCA02A9492C000022A20;
+			packageReferences = (
+				52B6BCE42A94988600022A20 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 52B6BCAA2A9492C000022A20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -613,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52B6BCE42A94988600022A20 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52B6BCE52A94988600022A20 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52B6BCE42A94988600022A20 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52B6BCA12A9492C000022A20 /* Project object */;
 }
