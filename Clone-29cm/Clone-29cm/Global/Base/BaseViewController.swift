@@ -15,6 +15,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         render()
         configUI()
+        setupNavigationBar()
         setupNavigationPopGesture()
     }
     
@@ -32,6 +33,21 @@ class BaseViewController: UIViewController {
     }
     
     // MARK: - helper func
+    
+    func makeBarButtonItem<T: UIView>(with view: T) -> UIBarButtonItem {
+        return UIBarButtonItem(customView: view)
+    }
+        
+    func setupNavigationBar() {
+        guard let navigationBar = navigationController?.navigationBar else { return }
+        let appearance = UINavigationBarAppearance()
+        
+        appearance.shadowColor = .clear
+        
+        navigationBar.standardAppearance = appearance
+        navigationBar.compactAppearance = appearance
+        navigationBar.scrollEdgeAppearance = appearance
+    }
     
     func setupNavigationPopGesture() {
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
